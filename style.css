@@ -155,7 +155,8 @@ input {
         /* font-size: 1rem; */
         font-weight: bolder;
         padding: 8px; 
-        margin-right: 10px;
+        margin-right: 6px;
+        width: fit-content;
         cursor: pointer;
         outline: 0;
         border: 0;
@@ -172,6 +173,7 @@ input {
         cursor: pointer;
         outline: 0;
         border: 0;
+        width: auto;
     }
 
     .invalid {
@@ -186,7 +188,7 @@ input {
 
     .w-img {
         height: 70%;
-        width: 100%;
+        width: 93%;
         justify-content: center;
         align-items: center;
         display: flex;
