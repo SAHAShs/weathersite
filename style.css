@@ -149,28 +149,35 @@ input {
         overflow-x: hidden; */
     }
 
-    input {
+    .city-input {
         background-color: aqua;
         border-radius: 20px;
         /* font-size: 1rem; */
         font-weight: bolder;
-        padding: 8px; 
-        margin-right: 6px;
-        width: fit-content;
+        padding: 8px 8px 8px 8px; 
+        /* margin: 12px 50px 1px 50px; */
+        height: 37px;
+        width: 300px;
         cursor: pointer;
         outline: 0;
         border: 0;
         color: #0a1d0a;
+    }
+    .search{
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     button {
         color: #0a1d0a;
         background-color: aqua;
         border-radius: 20px;
-        padding: 8px;
+        /* padding: 8px; */
         font-size: 1.3rem;
         font-weight: bold;
         cursor: pointer;
+        margin: 12px 50px 1px 50px;
         outline: 0;
         border: 0;
         width: auto;
