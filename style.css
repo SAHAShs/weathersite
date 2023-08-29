@@ -155,7 +155,7 @@ input {
         /* font-size: 1rem; */
         font-weight: bolder;
         padding: 8px 8px 8px 8px; 
-        /* margin: 12px 50px 1px 50px; */
+        margin-right: 0px ;
         height: 37px;
         width: 300px;
         cursor: pointer;
