@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather</title>
+    <link rel="icon" href="images/weatherapp.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input class="city-input" type="text" placeholder="Enter the city name" spellcheck="false">
+            <button class="serach-button">search</button>
+        </div>
+        <p class="invalid"></p>
+        <br>
+        <div class="weather">
+            <img src="images/meteorology.png" class="w-img">
+            <h1 class="temp"><img src="images/thermometer.png" class="thermo"> 0°C</h1>
+            <h2 class="city-name">--</h2>
+            <p class="description"></p>
+        </div>
+        <div class="description">
+            <div class="col">
+                <img src="images/humidity.png" class="d-img">
+                <div class="huminity">
+                    <p class="desc-humidity-percent">0% </p>
+
+                    <p class="desc-humidity"> humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/air-flow.png" alt="" class="d-img">
+                <div class="wind">
+                    <p class="desc-wind-speed">- km/h</p>
+                    <p class="desc-wind"> Wind</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/sunrise.png" alt="" class="d-img">
+                <div class="sunrise">
+                    <p class="desc-sunrise">00:00:00</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/sunset.png" alt="" class="d-img">
+                <div class="sunset">
+                    <p class="desc-sunset">00:00:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- <script>
+        const APIkey = "41e116c03c5d13cefb7947d48e82cb53";
+        const APIurl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
+        const cityInput = document.querySelector(".city-input");
+        const searchButton = document.querySelector(".serach-button");
+        searchButton.addEventListener("click", () => {
+            const city = cityInput.value;
+            checkwheather(city);
+        });
+        async function checkwheather(cityname) {
+            const response = await fetch(APIurl + `&q=${cityname}&appid=${APIkey}`)
+            var data = await response.json();
+            console.log(data)
+            document.querySelector(".city-name").innerHTML = data.name;
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            document.querySelector(".desc-humidity-percent").innerHTML = data.main.humidity + "%";
+            document.querySelector(".desc-wind-speed").innerHTML = data.wind.speed + "km/h";
+        }
+    </script> -->
+</body>
+
+</html>
