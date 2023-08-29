@@ -10,6 +10,7 @@ const wimag = document.querySelector(".w-img");
 const description = document.querySelector(".description");
 const Invalid = document.querySelector(".invalid");
 
+
 /** getting the user entered value when seachbutton is clicked */
 searchButton.addEventListener("click", () => {
     const city = cityInput.value;
@@ -24,7 +25,9 @@ async function checkwheather(cityname) {
     const response = await fetch(APIurl + `&q=${cityname}&appid=${APIkey}`)
     /** if response is a bad request handling it */
     if (response.status == 404) {
+        Invalid.style.visibility = 'visible';
         Invalid.innerHTML = "Invalid city......!"
+       
         setInterval(() => {
             var get = document.querySelector('.invalid');
             get.style.visibility = 'hidden';
